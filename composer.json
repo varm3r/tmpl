@@ -1,0 +1,20 @@
+{
+  "name": "varm3r/tmpl",
+  "description": "A simple template engine",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Vitaly Zhilkin",
+      "email": "v.zhilkin@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Varm3r\\Tmpl\\": "src/"
+    }
+  },
+  "require": {
+    "php": "~7.1"
+  }
+}
