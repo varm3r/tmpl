@@ -6,7 +6,7 @@ use Tmpl\Exception\TemplateErrorException;
 
 /**
  * Class TmplTest
- * @package Test
+ * @package Tmpl\Test
  */
 class TmplTest extends \Codeception\Test\Unit
 {
