@@ -40,9 +40,6 @@ class Parser
         foreach ($sectionList as $section) {
             // get last node from stack
             $lastNode = end($processNodeStack);
-            if (!$lastNode) {
-                throw new TemplateErrorException('Incorrect template');
-            }
             // close last if-node
             if ($lastNode instanceof NodeIf && $section === '{/if}') {
                 array_pop($processNodeStack);
@@ -59,6 +56,10 @@ class Parser
                 $node = new NodeText($section);
             }
             $lastNode->addChild($node);
+        }
+
+        if (count($processNodeStack) > 1) {
+            throw new TemplateErrorException('Incorrect template');
         }
 
         return $rootNode;
