@@ -1,13 +1,13 @@
 <?php
 
-namespace Varm3r\Tmpl;
+namespace Tmpl;
 
-use Varm3r\Tmpl\Exception\Exception as TmplException;
-use Varm3r\Tmpl\Exception\FileNotFoundException;
+use Tmpl\Exception\Exception as TmplException;
+use Tmpl\Exception\FileNotFoundException;
 
 /**
  * Class Factory
- * @package Varm3r\Tmpl
+ * @package Tmpl
  */
 final class Factory
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Varm3r\Tmpl\Exception;
+namespace Tmpl\Exception;
 
 /**
  * Class TemplateErrorException
- * @package Varm3r\Tmpl\Exception
+ * @package Tmpl\Exception
  */
 class TemplateErrorException extends Exception
 {

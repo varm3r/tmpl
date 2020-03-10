@@ -1,13 +1,13 @@
 <?php
 
-namespace Varm3r\Tmpl;
+namespace Tmpl;
 
-use Varm3r\Tmpl\Exception\Exception as TmplException;
-use Varm3r\Tmpl\Node\Node;
+use Tmpl\Exception\Exception as TmplException;
+use Tmpl\Node\Node;
 
 /**
  * Class Template
- * @package Varm3r\Tmpl
+ * @package Tmpl
  */
 class Template
 {

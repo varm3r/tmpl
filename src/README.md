@@ -11,13 +11,13 @@ To create template by text:
 try {
     // variables
     $text = '<h1>{title}</h1>';
-    $tmpl = \Varm3r\Tmpl\Factory::createByText($text);
+    $tmpl = \Tmpl\Factory::createByText($text);
     echo $tmpl->render(['title' => 'my header']); // it will output "<h1>my header</h1>"
     echo $tmpl->render(['title' => 'subtitle']); // it will output "<h1>subtitle</h1>"
     
     // if-conditions
     $text = '{if userName}Hello {userName}!{/if}';
-    $tmpl = \Varm3r\Tmpl\Factory::createByText($text);
+    $tmpl = \Tmpl\Factory::createByText($text);
     echo $tmpl->render(['userName' => 'Adam']); // it will output "Hello Adam!"
     
     // nested if-else conditions
@@ -28,11 +28,11 @@ try {
     gray {if test2}wolf{else}bird{/if}
 {/if}
 TEXT;
-    $tmpl = \Varm3r\Tmpl\Factory::createByText($text);
+    $tmpl = \Tmpl\Factory::createByText($text);
     echo $tmpl->render(['test1' => true, 'test2' => false]); // it will output "white cat"
     echo $tmpl->render(['test1' => false, 'test2' => true]); // it will output "gray wolf"
 
-} catch (\Varm3r\Tmpl\Exception\Exception $e) {
+} catch (\Tmpl\Exception\Exception $e) {
     // an exception will be thrown if template has error
 }
 ```
@@ -40,10 +40,10 @@ TEXT;
 It is posible to create template by filepath:
 ```php
 try {
-    $filepath = /var/www/html/project/templates/example.tpl;
-    $tmpl = \Varm3r\Tmpl\Factory::create($filepath);
+    $filepath = '/path/to/file.tpl';
+    $tmpl = \Tmpl\Factory::create($filepath);
     echo $tmpl->render(['title' => 'excelent!']);
-} catch (\Varm3r\Tmpl\Exception\Exception $e) {
+} catch (\Tmpl\Exception\Exception $e) {
     // an exception will be thrown if file does not exists or cannot be read
 }
 ```

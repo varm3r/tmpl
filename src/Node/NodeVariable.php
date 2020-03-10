@@ -1,10 +1,10 @@
 <?php
 
-namespace Varm3r\Tmpl\Node;
+namespace Tmpl\Node;
 
 /**
  * Class NodeVariable
- * @package Varm3r\Tmpl\Node
+ * @package Tmpl\Node
  */
 class NodeVariable implements NodeInterface
 {

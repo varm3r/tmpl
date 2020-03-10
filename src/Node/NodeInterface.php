@@ -1,10 +1,10 @@
 <?php
 
-namespace Varm3r\Tmpl\Node;
+namespace Tmpl\Node;
 
 /**
  * Interface NodeInterface
- * @package Varm3r\Tmpl\Node
+ * @package Tmpl\Node
  */
 interface NodeInterface
 {

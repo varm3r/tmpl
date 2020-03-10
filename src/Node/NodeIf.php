@@ -1,10 +1,10 @@
 <?php
 
-namespace Varm3r\Tmpl\Node;
+namespace Tmpl\Node;
 
 /**
  * Class NodeIf
- * @package Varm3r\Tmpl\Node
+ * @package Tmpl\Node
  */
 class NodeIf extends Node
 {

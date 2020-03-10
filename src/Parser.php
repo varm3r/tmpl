@@ -1,17 +1,17 @@
 <?php
 
-namespace Varm3r\Tmpl;
+namespace Tmpl;
 
-use Varm3r\Tmpl\Exception\TemplateErrorException;
-use Varm3r\Tmpl\Node\NodeElse;
-use Varm3r\Tmpl\Node\NodeIf;
-use Varm3r\Tmpl\Node\Node;
-use Varm3r\Tmpl\Node\NodeText;
-use Varm3r\Tmpl\Node\NodeVariable;
+use Tmpl\Exception\TemplateErrorException;
+use Tmpl\Node\NodeElse;
+use Tmpl\Node\NodeIf;
+use Tmpl\Node\Node;
+use Tmpl\Node\NodeText;
+use Tmpl\Node\NodeVariable;
 
 /**
  * Class TemplateParser
- * @package Varm3r\Tmpl
+ * @package Tmpl
  */
 class Parser
 {
